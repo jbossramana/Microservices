@@ -6,6 +6,6 @@ spring:
     config:
       server:
         git:
-          uri: c:\config-server-repo
+          uri: https://github.com/jbossramana/config-server-repo
          
          
