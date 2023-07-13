@@ -1,0 +1,37 @@
+@RestController
+public class OtherService {
+
+    @Autowired
+    RestTemplate restTemplate;
+
+    @Autowired
+    private CircuitBreakerRegistry circuitBreakerRegistry;
+
+    @Value("${circuitbreaker.enabled}")
+    private boolean circuitBreakerEnabled;
+
+    private CircuitBreaker circuitBreaker;
+
+    @PostConstruct
+    public void init() {
+        circuitBreaker = circuitBreakerRegistry.circuitBreaker("SimpleService");
+    }
+
+    @GetMapping("/")
+    public String getInfo() {
+        if (circuitBreakerEnabled) {
+            try {
+                String msg = circuitBreaker.executeCallable(() -> restTemplate.getForObject("http://SimpleService/", String.class));
+                return "Unshakable " + msg;
+            } catch (Exception e) {
+                return getDefaultInfo(e);
+            }
+        } else {
+            return restTemplate.getForObject("http://SimpleService/", String.class);
+        }
+    }
+
+    public String getDefaultInfo(Exception e) {
+        return "Prayer has comeback power...Fallback message";
+    }
+}
