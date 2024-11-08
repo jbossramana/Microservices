@@ -1,0 +1,137 @@
+11-Dec-2020 15:11:07.146 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'spring'
+11-Dec-2020 15:11:07.198 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: ${LOGIN_CONFIG_URL}
+11-Dec-2020 15:11:07.202 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:${LOGIN_CONFIG_PATH}/login.yml
+11-Dec-2020 15:11:07.203 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:C:\RestAdvance\projects\usecase2\uaa-tomcat\apache-tomcat-8.0.33\uaa/login.yml
+11-Dec-2020 15:11:07.204 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: ${UAA_CONFIG_URL}
+11-Dec-2020 15:11:07.206 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:${UAA_CONFIG_FILE}
+11-Dec-2020 15:11:07.207 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:${UAA_CONFIG_PATH}/uaa.yml
+11-Dec-2020 15:11:07.208 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:C:\RestAdvance\projects\usecase2\uaa-tomcat\apache-tomcat-8.0.33\uaa/uaa.yml
+11-Dec-2020 15:11:07.208 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Loading YAML environment properties from location: [class path resource [uaa.yml]]
+11-Dec-2020 15:11:14.762 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Ignoring Log Config Location: -Djava.util.logging.config.file="C:\RestAdvance\practice\usecase2\uaa-tomcat\apache-tomcat-8.0.33\conf\logging.properties". Location is suspect to be a Tomcat startup script environment variable
+11-Dec-2020 15:11:14.762 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Loading log4j config from location: classpath:log4j.properties
+11-Dec-2020 15:11:19.550 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+11-Dec-2020 15:11:19.551 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+11-Dec-2020 15:12:48.007 SEVERE [http-nio-8090-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [spring] in context with path [/uaa] threw exception
+ java.lang.IllegalStateException: No WebApplicationContext found: no ContextLoaderListener or DispatcherServlet registered?
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:253)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1502)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1458)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Dec-2020 15:12:58.362 SEVERE [http-nio-8090-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [spring] in context with path [/uaa] threw exception
+ java.lang.IllegalStateException: No WebApplicationContext found: no ContextLoaderListener or DispatcherServlet registered?
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:253)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1502)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1458)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Dec-2020 15:12:59.392 SEVERE [http-nio-8090-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [spring] in context with path [/uaa] threw exception
+ java.lang.IllegalStateException: No WebApplicationContext found: no ContextLoaderListener or DispatcherServlet registered?
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:253)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1502)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1458)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Dec-2020 15:12:59.581 SEVERE [http-nio-8090-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [spring] in context with path [/uaa] threw exception
+ java.lang.IllegalStateException: No WebApplicationContext found: no ContextLoaderListener or DispatcherServlet registered?
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:253)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1502)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1458)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Dec-2020 15:13:28.223 SEVERE [http-nio-8090-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [spring] in context with path [/uaa] threw exception
+ java.lang.IllegalStateException: No WebApplicationContext found: no ContextLoaderListener or DispatcherServlet registered?
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:253)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1502)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1458)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Dec-2020 15:13:32.395 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'spring'
+11-Dec-2020 15:13:32.408 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+11-Dec-2020 15:13:32.408 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+11-Dec-2020 15:13:57.676 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'spring'
+11-Dec-2020 15:13:57.724 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: ${LOGIN_CONFIG_URL}
+11-Dec-2020 15:13:57.730 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:${LOGIN_CONFIG_PATH}/login.yml
+11-Dec-2020 15:13:57.731 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:C:\RestAdvance\projects\usecase2\uaa-tomcat\apache-tomcat-8.0.33\uaa/login.yml
+11-Dec-2020 15:13:57.731 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: ${UAA_CONFIG_URL}
+11-Dec-2020 15:13:57.732 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:${UAA_CONFIG_FILE}
+11-Dec-2020 15:13:57.733 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:${UAA_CONFIG_PATH}/uaa.yml
+11-Dec-2020 15:13:57.733 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:C:\RestAdvance\projects\usecase2\uaa-tomcat\apache-tomcat-8.0.33\uaa/uaa.yml
+11-Dec-2020 15:13:57.733 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Loading YAML environment properties from location: [class path resource [uaa.yml]]
+11-Dec-2020 15:14:05.192 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Ignoring Log Config Location: -Djava.util.logging.config.file="C:\RestAdvance\practice\usecase2\uaa-tomcat\apache-tomcat-8.0.33\conf\logging.properties". Location is suspect to be a Tomcat startup script environment variable
+11-Dec-2020 15:14:05.192 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Loading log4j config from location: classpath:log4j.properties
+11-Dec-2020 15:14:08.652 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+11-Dec-2020 15:14:08.653 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+11-Dec-2020 15:15:15.182 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'spring'
+11-Dec-2020 15:15:15.197 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+11-Dec-2020 15:15:15.197 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()

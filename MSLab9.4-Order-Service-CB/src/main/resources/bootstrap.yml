@@ -1,0 +1,40 @@
+server:
+  port: 8081
+  
+     
+spring:
+  application:
+    name: OrderService
+  profiles:
+     active:
+      - development
+  cloud:
+    config:
+      uri:
+      - http://localhost:8888
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      slidingWindowType: COUNT_BASED
+      slidingWindowSize: 100
+      permittedNumberOfCallsInHalfOpenState: 10
+      waitDurationInOpenState: 10
+      failureRateThreshold: 60
+      registerHealthIndicator: true
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+         "*"
+          

@@ -1,0 +1,16 @@
+Feign is a declarative HTTP client that makes it easy to integrate and call RESTful APIs 
+from within a Spring Boot application. It abstracts the boilerplate code required for 
+making HTTP requests, allowing developers to focus on business logic rather than low-level 
+networking details.
+
+
+Feign is a declarative HTTP client, which means you can define an interface and Feign 
+will automatically implement it for you, handling the HTTP communication.
+
+Feign uses annotations to define the endpoints and HTTP methods.
+
+It integrates seamlessly with Spring Cloud, making it easier to call microservices in a 
+distributed architecture.
+
+
+

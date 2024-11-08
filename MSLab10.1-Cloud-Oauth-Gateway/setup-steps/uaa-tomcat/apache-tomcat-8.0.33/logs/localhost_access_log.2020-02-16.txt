@@ -1,0 +1,5 @@
+127.0.0.1 - - [16/Feb/2020:19:38:49 +0530] "GET / HTTP/1.1" 200 11452
+0:0:0:0:0:0:0:1 - - [16/Feb/2020:19:39:25 +0530] "GET /lab14-messenger-app/webapi/injectdemo/annotations HTTP/1.1" 404 1092
+0:0:0:0:0:0:0:1 - - [16/Feb/2020:19:39:41 +0530] "GET /lab14-messenger-app/webapi/injectdemo/annotations HTTP/1.1" 200 55
+0:0:0:0:0:0:0:1 - - [16/Feb/2020:19:42:09 +0530] "GET /lab14-messenger-app/webapi/injectdemo/annotations HTTP/1.1" 200 55
+0:0:0:0:0:0:0:1 - - [16/Feb/2020:19:43:23 +0530] "GET /lab14-messenger-app/webapi/injectdemo/annotations HTTP/1.1" 200 56
