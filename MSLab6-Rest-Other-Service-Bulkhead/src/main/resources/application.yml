@@ -1,0 +1,25 @@
+server:
+  port: 8081
+  tomcat:
+    threads:
+      max: 15
+
+  
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+      
+spring:
+  application:
+    name: OtherService
+
+
+resilience4j.bulkhead:
+  instances:
+    SimpleService:
+      maxConcurrentCalls: 10
+
+      maxWaitDuration: 10ms

@@ -1,0 +1,42 @@
+step 1: Start uaa server
+
+> open a command prompt
+> run the below commands
+set SPRING_PROFILES_ACTIVE=default,hsqldb
+set CLOUD_FOUNDRY_CONFIG_PATH=C:\RestAdvance\practice\usecase2\uaa-tomcat\apache-tomcat-8.0.33\uaa
+> start startup.bat
+
+Note:  Observer the files : conf\server.xml; conf\tomcat-users.xml, uaa\uaa.yml
+
+
+step 2:  Start  Usecase-cloud-oauth-gateway
+
+step 3:  Start  Usecase-Cloud-oauth-secured-service
+
+step 4:  
+
+check the jwt token keys:
+
+http://localhost:8090/uaa/token_keys
+
+
+Step 5:
+
+a). To test the application
+
+http://localhost:8888/resource
+
+Note: 
+username : user1
+password: password
+
+
+b). Check the logs:
+Kibana is available under address http://localhost:5601
+Select Management -> Index patterns-> micro-*
+Select Discover
+
+c). Access Zipkin, point to the below url
+http://localhost:9411/
+
+

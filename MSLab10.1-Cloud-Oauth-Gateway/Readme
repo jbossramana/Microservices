@@ -1,0 +1,12 @@
+filterFactory.apply() method in the route declaration ensures that any exchanges intended for the Resource Server contain 
+a JWT access token.
+
+
+removeRequestHeader(“Cookie”) tells the gateway to remove the users “Cookie” header from the request during the routing 
+operation (because downstream services don’t need this, all they need is the JWT access_token).
+
+
+A redirect URI, or reply URL, is the location that the authorization server will send the user to once the app has been successfully 
+authorized, and granted an authorization code or access token. The code or token is contained in the redirect URI or reply token.
+
+

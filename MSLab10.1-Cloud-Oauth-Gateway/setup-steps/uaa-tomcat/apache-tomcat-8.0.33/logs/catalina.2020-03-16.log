@@ -1,0 +1,261 @@
+16-Mar-2020 13:53:22.536 WARNING [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library failed to load. The error reported was [D:\tomcat\software\apache-tomcat-8.0.33\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform]
+ java.lang.UnsatisfiedLinkError: D:\tomcat\software\apache-tomcat-8.0.33\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1934)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1850)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:197)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:106)
+	at org.apache.catalina.connector.Connector.setProtocol(Connector.java:564)
+	at org.apache.catalina.connector.Connector.<init>(Connector.java:66)
+	at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:62)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1178)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1339)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:552)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:603)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+
+16-Mar-2020 13:53:22.994 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+16-Mar-2020 13:53:22.995 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+16-Mar-2020 13:53:22.996 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+16-Mar-2020 13:53:22.997 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+16-Mar-2020 13:53:22.997 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+16-Mar-2020 13:53:22.999 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+16-Mar-2020 13:53:23.001 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\MST\software\Java\jdk1.8.0_231\jre
+16-Mar-2020 13:53:23.002 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_231-b11
+16-Mar-2020 13:53:23.004 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+16-Mar-2020 13:53:23.009 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\tomcat\software\apache-tomcat-8.0.33
+16-Mar-2020 13:53:23.025 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\tomcat\software\apache-tomcat-8.0.33
+16-Mar-2020 13:53:23.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\tomcat\software\apache-tomcat-8.0.33\conf\logging.properties
+16-Mar-2020 13:53:23.030 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Mar-2020 13:53:23.035 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=D:\tomcat\software\apache-tomcat-8.0.33\endorsed
+16-Mar-2020 13:53:23.043 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\tomcat\software\apache-tomcat-8.0.33
+16-Mar-2020 13:53:23.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\tomcat\software\apache-tomcat-8.0.33
+16-Mar-2020 13:53:23.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\tomcat\software\apache-tomcat-8.0.33\temp
+16-Mar-2020 13:53:23.921 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8090"]
+16-Mar-2020 13:53:25.889 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+16-Mar-2020 13:53:25.894 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+16-Mar-2020 13:53:25.903 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+16-Mar-2020 13:53:25.904 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 6523 ms
+16-Mar-2020 13:53:26.086 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+16-Mar-2020 13:53:26.087 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+16-Mar-2020 13:53:26.173 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\tomcat\software\apache-tomcat-8.0.33\webapps\uaa.war
+16-Mar-2020 13:53:28.933 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Mar-2020 13:54:09.410 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive D:\tomcat\software\apache-tomcat-8.0.33\webapps\uaa.war has finished in 43,235 ms
+16-Mar-2020 13:54:09.513 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\docs
+16-Mar-2020 13:54:09.625 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\docs has finished in 113 ms
+16-Mar-2020 13:54:09.626 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\examples
+16-Mar-2020 13:54:11.490 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\examples has finished in 1,863 ms
+16-Mar-2020 13:54:11.491 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\host-manager
+16-Mar-2020 13:54:11.664 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\host-manager has finished in 173 ms
+16-Mar-2020 13:54:11.666 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\manager
+16-Mar-2020 13:54:11.814 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\manager has finished in 149 ms
+16-Mar-2020 13:54:11.823 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\ROOT
+16-Mar-2020 13:54:11.935 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\ROOT has finished in 112 ms
+16-Mar-2020 13:54:11.969 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8090"]
+16-Mar-2020 13:54:12.020 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+16-Mar-2020 13:54:12.032 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 46124 ms
+16-Mar-2020 13:55:53.997 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8090"]
+16-Mar-2020 13:55:54.074 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+16-Mar-2020 13:55:54.130 INFO [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+16-Mar-2020 13:55:54.330 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8090"]
+16-Mar-2020 13:55:54.380 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+16-Mar-2020 13:55:54.400 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8090"]
+16-Mar-2020 13:55:54.406 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+16-Mar-2020 13:59:32.634 WARNING [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library failed to load. The error reported was [D:\tomcat\software\apache-tomcat-8.0.33\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform]
+ java.lang.UnsatisfiedLinkError: D:\tomcat\software\apache-tomcat-8.0.33\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1934)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1850)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:197)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:106)
+	at org.apache.catalina.connector.Connector.setProtocol(Connector.java:564)
+	at org.apache.catalina.connector.Connector.<init>(Connector.java:66)
+	at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:62)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1178)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1339)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:552)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:603)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+
+16-Mar-2020 13:59:32.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+16-Mar-2020 13:59:32.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+16-Mar-2020 13:59:32.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+16-Mar-2020 13:59:32.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+16-Mar-2020 13:59:32.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+16-Mar-2020 13:59:32.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+16-Mar-2020 13:59:32.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\MST\software\Java\jdk1.8.0_231\jre
+16-Mar-2020 13:59:32.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_231-b11
+16-Mar-2020 13:59:32.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+16-Mar-2020 13:59:32.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\tomcat\software\apache-tomcat-8.0.33
+16-Mar-2020 13:59:32.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\tomcat\software\apache-tomcat-8.0.33
+16-Mar-2020 13:59:32.988 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\tomcat\software\apache-tomcat-8.0.33\conf\logging.properties
+16-Mar-2020 13:59:32.996 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Mar-2020 13:59:32.999 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=D:\tomcat\software\apache-tomcat-8.0.33\endorsed
+16-Mar-2020 13:59:33.009 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\tomcat\software\apache-tomcat-8.0.33
+16-Mar-2020 13:59:33.011 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\tomcat\software\apache-tomcat-8.0.33
+16-Mar-2020 13:59:33.035 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\tomcat\software\apache-tomcat-8.0.33\temp
+16-Mar-2020 13:59:33.440 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8090"]
+16-Mar-2020 13:59:34.836 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+16-Mar-2020 13:59:34.840 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+16-Mar-2020 13:59:34.846 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+16-Mar-2020 13:59:34.847 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 4097 ms
+16-Mar-2020 13:59:34.900 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+16-Mar-2020 13:59:34.901 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+16-Mar-2020 13:59:34.948 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\tomcat\software\apache-tomcat-8.0.33\webapps\uaa.war
+16-Mar-2020 13:59:36.320 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Mar-2020 14:00:56.737 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive D:\tomcat\software\apache-tomcat-8.0.33\webapps\uaa.war has finished in 81,786 ms
+16-Mar-2020 14:00:56.741 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\docs
+16-Mar-2020 14:00:56.857 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\docs has finished in 115 ms
+16-Mar-2020 14:00:56.865 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\examples
+16-Mar-2020 14:00:57.855 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\examples has finished in 991 ms
+16-Mar-2020 14:00:57.856 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\host-manager
+16-Mar-2020 14:00:57.941 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\host-manager has finished in 85 ms
+16-Mar-2020 14:00:57.945 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\manager
+16-Mar-2020 14:00:58.032 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\manager has finished in 88 ms
+16-Mar-2020 14:00:58.040 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\ROOT
+16-Mar-2020 14:00:58.100 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\ROOT has finished in 60 ms
+16-Mar-2020 14:00:58.119 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8090"]
+16-Mar-2020 14:00:58.146 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+16-Mar-2020 14:00:58.155 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 83306 ms
+16-Mar-2020 14:15:41.195 INFO [Thread-8] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8090"]
+16-Mar-2020 14:15:41.266 INFO [Thread-8] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+16-Mar-2020 14:15:41.318 INFO [Thread-8] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+16-Mar-2020 14:15:42.015 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [uaa] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+16-Mar-2020 14:15:42.020 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [uaa] appears to have started a thread named [true] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.Object.wait(Object.java:502)
+ java.util.TimerThread.mainLoop(Timer.java:526)
+ java.util.TimerThread.run(Timer.java:505)
+16-Mar-2020 14:15:42.158 INFO [Thread-8] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8090"]
+16-Mar-2020 14:15:42.245 INFO [Thread-8] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+16-Mar-2020 14:15:42.271 INFO [Thread-8] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8090"]
+16-Mar-2020 14:15:42.278 INFO [Thread-8] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+16-Mar-2020 14:15:50.091 WARNING [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library failed to load. The error reported was [D:\tomcat\software\apache-tomcat-8.0.33\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform]
+ java.lang.UnsatisfiedLinkError: D:\tomcat\software\apache-tomcat-8.0.33\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1934)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1850)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:197)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:106)
+	at org.apache.catalina.connector.Connector.setProtocol(Connector.java:564)
+	at org.apache.catalina.connector.Connector.<init>(Connector.java:66)
+	at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:62)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1178)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1339)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:552)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:603)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+
+16-Mar-2020 14:15:50.385 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+16-Mar-2020 14:15:50.386 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+16-Mar-2020 14:15:50.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+16-Mar-2020 14:15:50.388 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+16-Mar-2020 14:15:50.390 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+16-Mar-2020 14:15:50.392 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+16-Mar-2020 14:15:50.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\MST\software\Java\jdk1.8.0_231\jre
+16-Mar-2020 14:15:50.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_231-b11
+16-Mar-2020 14:15:50.406 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+16-Mar-2020 14:15:50.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\tomcat\software\apache-tomcat-8.0.33
+16-Mar-2020 14:15:50.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\tomcat\software\apache-tomcat-8.0.33
+16-Mar-2020 14:15:50.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\tomcat\software\apache-tomcat-8.0.33\conf\logging.properties
+16-Mar-2020 14:15:50.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Mar-2020 14:15:50.431 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=D:\tomcat\software\apache-tomcat-8.0.33\endorsed
+16-Mar-2020 14:15:50.440 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\tomcat\software\apache-tomcat-8.0.33
+16-Mar-2020 14:15:50.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\tomcat\software\apache-tomcat-8.0.33
+16-Mar-2020 14:15:50.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\tomcat\software\apache-tomcat-8.0.33\temp
+16-Mar-2020 14:15:50.969 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8090"]
+16-Mar-2020 14:15:53.418 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+16-Mar-2020 14:15:53.430 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+16-Mar-2020 14:15:53.446 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+16-Mar-2020 14:15:53.449 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 4466 ms
+16-Mar-2020 14:15:53.577 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+16-Mar-2020 14:15:53.578 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+16-Mar-2020 14:15:53.663 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\tomcat\software\apache-tomcat-8.0.33\webapps\uaa.war
+16-Mar-2020 14:15:55.640 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Mar-2020 14:17:01.754 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive D:\tomcat\software\apache-tomcat-8.0.33\webapps\uaa.war has finished in 68,091 ms
+16-Mar-2020 14:17:01.757 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\docs
+16-Mar-2020 14:17:01.788 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\docs has finished in 32 ms
+16-Mar-2020 14:17:01.790 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\examples
+16-Mar-2020 14:17:02.109 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\examples has finished in 319 ms
+16-Mar-2020 14:17:02.116 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\host-manager
+16-Mar-2020 14:17:02.198 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\host-manager has finished in 82 ms
+16-Mar-2020 14:17:02.202 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\manager
+16-Mar-2020 14:17:02.233 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\manager has finished in 32 ms
+16-Mar-2020 14:17:02.234 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\ROOT
+16-Mar-2020 14:17:02.257 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\tomcat\software\apache-tomcat-8.0.33\webapps\ROOT has finished in 23 ms
+16-Mar-2020 14:17:02.266 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8090"]
+16-Mar-2020 14:17:02.283 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+16-Mar-2020 14:17:02.287 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 68830 ms
+16-Mar-2020 15:33:56.781 INFO [Thread-8] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8090"]
+16-Mar-2020 15:33:56.848 INFO [Thread-8] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+16-Mar-2020 15:33:56.854 INFO [Thread-8] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+16-Mar-2020 15:33:57.785 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [uaa] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+16-Mar-2020 15:33:57.791 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [uaa] appears to have started a thread named [true] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.Object.wait(Object.java:502)
+ java.util.TimerThread.mainLoop(Timer.java:526)
+ java.util.TimerThread.run(Timer.java:505)
+16-Mar-2020 15:33:57.935 INFO [Thread-8] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8090"]
+16-Mar-2020 15:33:58.026 INFO [Thread-8] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+16-Mar-2020 15:33:58.099 INFO [Thread-8] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8090"]
+16-Mar-2020 15:33:58.104 INFO [Thread-8] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

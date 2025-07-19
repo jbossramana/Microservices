@@ -1,0 +1,37 @@
+Rest API
+
+City Service
+--------------
+
+Resource   :   city
+
+CRUD
+|_ POST  -  Create
+|_ GET   -  Retreive
+|_ PUT   - Update
+|_ DELETE - Delete
+
+endpoint/url:
+
+/city    GET, POST, DELETE
+
+/city/<cityID> GET, PUT, DELETE
+
+custom queries:  [query/request/application parameter]
+
+return all the cities with population above 5lakhs
+
+/city?population=5000000
+
+return first 5 cities
+/city?start=1&size=5
+
+
+Retreive a city with id
+/city/1001
+/city?cityID=1001   x  
+
+
+
+
+

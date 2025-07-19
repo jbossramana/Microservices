@@ -1,0 +1,35 @@
+ELK installation Steps:
+=======================
+
+
+1. Extract ElasticSearch
+2. start -> bin/elasticsearch.bat
+3. Test -> http://localhost:9200
+
+
+1. Extract Logstash
+2. Copy the file logstash.conf from root folder to logstash bin folder
+3. start logstash
+>bin/logstash.bat -f logstash.conf
+
+
+1. Extract kibana
+2. start -> bin/kibana.bat
+3. Test -> http://localhost:5601
+
+
+Zipkin Server
+==============
+java -jar zipkin-server-2.12.9-exec.jar
+
+Test : http://localhost:9411/
+
+note: zipkin to start in another port 
+java -jar zipkin-server-2.12.9-exec.jar --server.port=9888
+
+
+
+
+
+
+

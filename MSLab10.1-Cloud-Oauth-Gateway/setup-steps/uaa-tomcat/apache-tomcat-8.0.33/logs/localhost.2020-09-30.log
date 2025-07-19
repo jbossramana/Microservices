@@ -1,0 +1,16 @@
+30-Sep-2020 15:42:30.719 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'spring'
+30-Sep-2020 15:42:30.771 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: ${LOGIN_CONFIG_URL}
+30-Sep-2020 15:42:30.774 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:${LOGIN_CONFIG_PATH}/login.yml
+30-Sep-2020 15:42:30.774 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:C:\RestAdvance\projects\usecase2\uaa-tomcat\apache-tomcat-8.0.33\uaa/login.yml
+30-Sep-2020 15:42:30.775 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: ${UAA_CONFIG_URL}
+30-Sep-2020 15:42:30.775 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:${UAA_CONFIG_FILE}
+30-Sep-2020 15:42:30.776 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:${UAA_CONFIG_PATH}/uaa.yml
+30-Sep-2020 15:42:30.776 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:C:\RestAdvance\projects\usecase2\uaa-tomcat\apache-tomcat-8.0.33\uaa/uaa.yml
+30-Sep-2020 15:42:30.777 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Loading YAML environment properties from location: [class path resource [uaa.yml], URL [file:C:/RestAdvance/projects/usecase2/uaa-tomcat/apache-tomcat-8.0.33/uaa/uaa.yml]]
+30-Sep-2020 15:42:38.291 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Ignoring Log Config Location: -Djava.util.logging.config.file="C:\RestAdvance\projects\usecase2\uaa-tomcat\apache-tomcat-8.0.33\conf\logging.properties". Location is suspect to be a Tomcat startup script environment variable
+30-Sep-2020 15:42:38.291 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Loading log4j config from location: classpath:log4j.properties
+30-Sep-2020 15:43:06.035 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Sep-2020 15:43:06.035 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Sep-2020 16:52:33.784 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'spring'
+30-Sep-2020 16:52:33.950 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Sep-2020 16:52:33.950 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()

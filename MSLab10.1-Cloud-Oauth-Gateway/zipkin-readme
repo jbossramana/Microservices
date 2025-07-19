@@ -1,0 +1,8 @@
+To start zipkin:
+
+docker run -d -p 9411:9411 openzipkin/zipkin
+
+
+To access the console
+
+localhost: 9411

@@ -1,0 +1,57 @@
+When we call this endpoint, due to the synchronous nature of RestTemplate, the code will block waiting for the response from our slow 
+service. Only when the response has been received, the rest of the code in this method will be executed. 
+
+
+WebClient returns a Flux publisher and the method execution gets completed. Once the result is available, the publisher 
+will start emitting tweets to its [subscribers]. Note that a client (in this case, a web browser) calling this /tweets-non-blocking 
+endpoint will also be [subscribed] to the returned Flux object.
+
+
+Test the application
+============
+
+http://localhost:8080/tweets-blocking
+http://localhost:8080/tweets-non-blocking
+
+Note:
+Uncomment, .delayElements(Duration.ofSeconds(1))  
+onceagin run http://localhost:8080/tweets-non-blocking
+
+Reactive Rest Controller:
+===============
+
+@GetMapping("/banking/account/{accountId}")
+public Mono<ResponseEntity<Account>> getAccountById(@PathVariable ("accountId") String accounId)
+{
+return repo.findById(accounId).map(savedAccount
+->ResponseEntity.ok(savedAccount)).log()
+.defaultIfEmpty(ResponseEntity.notFound().build());
+}
+@GetMapping(value="banking/stream/accounts",produces=org.springframework.http.MediaType.TEXT_EVENT_STREAM_VALUE)
+public Flux<Account> getAccountByStream()
+{
+return repo.findAll().publishOn(Schedulers.parallel()).log().delayElements(Duration.ofMillis(100));
+
+
+Reactive Spring Data repository :
+====================
+
+@Repository
+public interface AccountRepository extends ReactiveMongoRepository<Account, String> {
+public Flux<Account> findAll();
+public Mono<Account> save(Account entity);
+public Mono<Void> deleteById(String Id);
+}
+
+Reactive Web Client:
+============
+WebClient client= WebClient.create("http://localhost:8080/")
+client.get().uri("/banking/stream/accounts")
+.accept(MediaType.TEXT_EVENT_STREAM)
+.retrieve()
+.bodyToFlux(Account.class)
+.subscribe(System.out::println);
+}
+
+
+

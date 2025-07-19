@@ -1,0 +1,49 @@
+OpenAPI Specification, OpenAPI 3.0 (OAS 3.0)
+
+
+springdoc-openapi
+---------------------
+
+Library for OpenAPI 3 with spring-boot
+
+
+The OpenAPI descriptions will be available at the path /v3/api-docs by default 
+
+http://localhost:8080/v3/api-docs/
+
+
+To use a custom path, we can indicate in the application.properties file:
+
+springdoc.api-docs.path=/api-docs
+
+Now, we'll be able to access the docs at:
+
+http://localhost:8080/api-docs/
+
+Note:  jq tool
+curl http://localhost:8080/v3/api-docs/ | jq.exe
+
+
+Swagger UI
+------------
+http://localhost:8080/swagger-ui.html
+
+
+Spring Data JPA [Pagination support]
+----------------------------------------
+
+curl -X GET "http://localhost:8080/person?page=0&size=0&sort=firstName" -H "accept: */*"
+
+
+Note: Spring Data Rest support is not yet available.
+
+
+Auto documentation
+----------------------
+
+> When the  model includes JSR-303 bean validation annotations, such as @NotNull, @NotBlank, @Size, @Min, and @Max, 
+the springdoc-openapi library uses them to generate additional schema documentation for the corresponding constraints.
+
+
+> Using @ResponseStatus on methods in a @RestControllerAdvice class will automatically generate documentation for the response codes.
+(Ref to GlobalControllerExceptionHandler.java)

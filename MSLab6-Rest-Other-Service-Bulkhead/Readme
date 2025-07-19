@@ -1,0 +1,10 @@
+A ship is split into small multiple compartments using Bulkheads. Bulkheads are used to seal parts 
+of the ship to prevent entire ship from sinking in case of flood. 
+
+Similarly failures should be expected when we design software. The application should be split into 
+multiple components and resources should be isolated in such a way that failure of one component 
+is not affecting the other. 
+
+Bulkhead ensures the failure in one part of the system doesn't cause the whole system down. 
+It controls the number of concurrent calls a component can take. This way, the number of resources 
+waiting for the response from that component is limited. 

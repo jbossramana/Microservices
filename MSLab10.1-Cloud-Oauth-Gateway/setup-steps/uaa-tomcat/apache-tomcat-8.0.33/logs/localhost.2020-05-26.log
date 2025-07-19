@@ -1,0 +1,11 @@
+26-May-2020 07:14:23.011 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'spring'
+26-May-2020 07:14:23.083 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: ${LOGIN_CONFIG_URL}
+26-May-2020 07:14:23.086 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:${LOGIN_CONFIG_PATH}/login.yml
+26-May-2020 07:14:23.087 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:${CLOUD_FOUNDRY_CONFIG_PATH}/login.yml
+26-May-2020 07:14:23.087 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: ${UAA_CONFIG_URL}
+26-May-2020 07:14:23.088 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:${UAA_CONFIG_FILE}
+26-May-2020 07:14:23.089 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:${UAA_CONFIG_PATH}/uaa.yml
+26-May-2020 07:14:23.090 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Testing for YAML resources at: file:${CLOUD_FOUNDRY_CONFIG_PATH}/uaa.yml
+26-May-2020 07:14:23.090 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Loading YAML environment properties from location: [class path resource [uaa.yml]]
+26-May-2020 07:14:30.241 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Ignoring Log Config Location: -Djava.util.logging.config.file="C:\RestAdvance\projects\advance\MSLab5-security-cloud-gateway-oauth\uaa-tomcat\apache-tomcat-8.0.33\conf\logging.properties". Location is suspect to be a Tomcat startup script environment variable
+26-May-2020 07:14:30.241 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Loading log4j config from location: classpath:log4j.properties
