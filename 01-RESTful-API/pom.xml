@@ -40,6 +40,7 @@
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 		
+<!--
 		<dependency>
  			 <groupId>net.logstash.logback</groupId>
   			  <artifactId>logstash-logback-encoder</artifactId>
@@ -59,7 +60,7 @@
     <artifactId>zipkin-reporter-brave</artifactId>
 </dependency>
 		
-		
+-->		
 		<dependency>
    		 <groupId>com.fasterxml.jackson.dataformat</groupId>
     	<artifactId>jackson-dataformat-xml</artifactId>
