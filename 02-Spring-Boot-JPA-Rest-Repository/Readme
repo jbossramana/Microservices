@@ -1,0 +1,11 @@
+Custom Query Endpoints (Based on Method Names)
+Spring Data REST exposes custom finder methods at:
+
+/tasks/search/{methodName}
+
+Method Name	Endpoint:
+
+findByDescription	GET /tasks/search/findByDescription?description=Read a book
+findByDescriptionContainingIgnoreCase	GET /tasks/search/findByDescriptionContainingIgnoreCase?keyword=read
+findTasksWithPrefix	GET /tasks/search/findTasksWithPrefix?prefix=Read
+findTasksWithDescriptionLongerThan	GET /tasks/search/findTasksWithDescriptionLongerThan?minLength=10
