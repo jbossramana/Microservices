@@ -16,6 +16,7 @@ spring:
       server:
         git:
           uri: C:\config-server-repo
+          default-label: master
           search-paths:
             - paymentservice
             - orderservice
